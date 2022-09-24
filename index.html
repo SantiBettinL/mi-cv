@@ -173,10 +173,12 @@
                 <h2 class="section-title">Contact</h2>
 
                 <div class="contact__container bd-grid">
-                    <form action="https://formsubmit.co/andresbettin2003@gmail.com" class="contact__form" method="post">
+                    <form action="https://formsubmit.co/andresbettin2003@gmail.com" class="contact__form" method="POST">
+                        <input type="hidden" name="_subject" value="New email wooo!">
                         <input type="text" name="name" placeholder="Name" class="contact__input" required>
-                        <input type="email" name="email" placeholder="Email" class="contact__input" required>
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <input type="email" name="email" placeholder="Email Address" class="contact__input" required>
+                        <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+                        <textarea type="text" name="message" rows="5" placeholder="Write your message here" class="contact__input" required></textarea>
                         <button type="submit" value="Enviar" class="contact__button button">Send</button>
                     </form>
                 </div>
